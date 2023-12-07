@@ -7,14 +7,14 @@ slides.forEach((sl,index)=>{
 
 const goPrev = ()=>{
     if(counter==0){
-        counter=4;
+        counter=6;
     }
     counter--;
     shiftSlide();
 }
 const goNext = ()=>{
     counter++;
-    if(counter==4){
+    if(counter==6){
         counter=0;
     }
     shiftSlide();
