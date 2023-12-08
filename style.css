@@ -238,7 +238,7 @@ html,body{
     padding: 24px 20px 0px 20px;
 }
 
-.popular-TV-section h3{
+h3[class="heading"]{
     font-family: 'inter Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 24px;
@@ -264,7 +264,7 @@ html,body{
 
 .card:hover{
     border-radius: 0;
-    scale: 1.01;
+    scale: 1.02;
 }
 .card .image-container{
     width: 100%;
