@@ -39,6 +39,7 @@ html,body{
     width: 100%;
     height: 100%;
     display: flex;  
+    position: relative;
 }
 
 .sidebar{
@@ -79,6 +80,8 @@ html,body{
     gap: 5px;
     color: var(--font-color);
 }
+
+
 #main-heading{
     margin-bottom: -40px;
   
@@ -92,8 +95,70 @@ html,body{
     color: var(--items-hover-color1);
 }
 
-.active{
-    color: var(--active-state-color);
+
+/* navbar-small-screens */
+.main-container .navbar{
+    width: 100%;
+   
+}
+
+.navbar .top-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    font-family: 'inter Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    display: none;
+    
+}
+
+
+.navbar .navbar-items{
+    padding-bottom: 0px;
+    padding-left: 24px;
+    padding-right: 32px;
+    padding-top: 16px;
+    /* display: flex; */
+    flex-direction: column;
+    gap: 40px;
+    height: 0;
+    transition: all .2s ease-in-out;
+    background-color: var(--primary-color);
+}
+
+
+.navbar .navbar-items li{
+    display: flex;
+    flex-direction: column;
+    font-family: 'inter Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--font-color);
+}
+
+.navbar .navbar-items li h5{
+    margin-bottom: 5px;
+}
+
+.navbar-items li a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    gap: 5px;
+    color: var(--font-color);
+}
+
+@media (width<=767px) {
+    .sidebar{
+        display: none;
+    }
+    .navbar .top-header{
+        display: flex;
+    }
 }
 
 /* right section */
@@ -299,3 +364,8 @@ h3[class="heading"]{
 }
 
 
+
+
+.active{
+    height: 100vh;
+}
