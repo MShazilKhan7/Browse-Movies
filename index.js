@@ -37,6 +37,7 @@ const hamburg = document.querySelector('.hamburg')
 hamburg.addEventListener('click',()=>{
     console.log("yes hambur");
     const items  = document.querySelector('.navbar .navbar-items')
+
     if(clicked)
     {items.style.height = "100vh";  
     clicked=false

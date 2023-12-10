@@ -99,6 +99,8 @@ html,body{
 /* navbar-small-screens */
 .main-container .navbar{
     width: 100%;
+    position: absolute;
+    top: 0;
    
 }
 
@@ -111,6 +113,7 @@ html,body{
     font-family: 'inter Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: lighter;
     display: none;
+   
     
 }
 
@@ -120,13 +123,18 @@ html,body{
     padding-left: 24px;
     padding-right: 32px;
     padding-top: 16px;
-    /* display: flex; */
     flex-direction: column;
     gap: 40px;
     height: 0;
+    width: 100%;
     transition: all .2s ease-in-out;
     background-color: var(--primary-color);
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
 }
+
+
 
 
 .navbar .navbar-items li{
@@ -137,6 +145,7 @@ html,body{
     font-weight: 300;
     color: var(--font-color);
 }
+
 
 .navbar .navbar-items li h5{
     margin-bottom: 5px;
@@ -152,6 +161,9 @@ html,body{
     color: var(--font-color);
 }
 
+.hamburg i{
+    color: var(--font-color);
+}
 @media (width<=767px) {
     .sidebar{
         display: none;
