@@ -170,10 +170,10 @@ html,body{
 .hamburg i{
     color: var(--font-color);
 }
+
 @media (width<=767px) {
-    .sidebar{
-        background-color: rebeccapurple;
-        /* display: none; */
+    .main-container .sidebar{
+        display: none;
     }
     .main-container .navbar{
         display: flex;
@@ -185,6 +185,7 @@ html,body{
         display: flex;
     }
 } 
+
 /* right */
 .right-section{
     width: 100%;
