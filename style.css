@@ -172,7 +172,8 @@ html,body{
 }
 @media (width<=767px) {
     .sidebar{
-        display: none;
+        background-color: rebeccapurple;
+        /* display: none; */
     }
     .main-container .navbar{
         display: flex;
