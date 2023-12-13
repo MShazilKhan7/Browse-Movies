@@ -49,6 +49,7 @@ html,body{
     padding-top: 16px;
     max-width: 180px;
     height: 100%;
+    top: 0;
     background-color: var(--sidebar-bg-color);
     
 }
@@ -95,24 +96,28 @@ html,body{
     color: var(--items-hover-color1);
 }
 
-
 /* navbar-small-screens */
 .main-container .navbar{
     width: 100%;
     position: absolute;
-    top: 0;
-   
+    top: 0%;
+    background-color: yellow;
+    display: none;
+    
 }
 
 .navbar .top-header{
-    display: flex;
     justify-content: space-between;
     padding: 10px 20px;
+    display: flex;
     background-color: var(--primary-color);
+    /* background-color: red; */
     color: var(--font-color);
     font-family: 'inter Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: lighter;
+    z-index: 4;
     display: none;
+    
    
     
 }
@@ -132,6 +137,7 @@ html,body{
     position: absolute;
     z-index: 1;
     overflow: hidden;
+    display: none;
 }
 
 
@@ -168,12 +174,17 @@ html,body{
     .sidebar{
         display: none;
     }
+    .main-container .navbar{
+        display: flex;
+    }
     .navbar .top-header{
         display: flex;
     }
-}
-
-/* right section */
+    .navbar .navbar-items{
+        display: flex;
+    }
+} 
+/* right */
 .right-section{
     width: 100%;
     background-color: var(--right-section-color);
