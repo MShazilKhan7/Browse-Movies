@@ -383,7 +383,7 @@ h3[class="heading"]{
 }
 
 
-@media (max-width<=767px) {
+@media only screen and (max-width: 768px) {
     .main-container .sidebar{
         display: none;
     }
