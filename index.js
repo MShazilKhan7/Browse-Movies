@@ -32,12 +32,6 @@ const shiftSlide = ()=>{
 }
 
 // hamburg menu
-document.addEventListener('DOMContentLoaded', ()=>{
-    if(screen.width<=767){
-       const sidebar = document.querySelector('.sidebar')
-       sidebar.style.display = "none";
-    }
-})
 
 let clicked = true
 const hamburg = document.querySelector('.hamburg')
