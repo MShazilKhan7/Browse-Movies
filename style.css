@@ -171,20 +171,7 @@ html,body{
     color: var(--font-color);
 }
 
-@media (width<=767px) {
-    .main-container .sidebar{
-        display: none;
-    }
-    .main-container .navbar{
-        display: flex;
-    }
-    .navbar .top-header{
-        display: flex;
-    }
-    .navbar .navbar-items{
-        display: flex;
-    }
-} 
+
 
 /* right */
 .right-section{
@@ -394,3 +381,19 @@ h3[class="heading"]{
 .active{
     height: 100vh;
 }
+
+
+@media (width<=767px) {
+    .main-container .sidebar{
+        display: none;
+    }
+    .main-container .navbar{
+        display: flex;
+    }
+    .navbar .top-header{
+        display: flex;
+    }
+    .navbar .navbar-items{
+        display: flex;
+    }
+} 
