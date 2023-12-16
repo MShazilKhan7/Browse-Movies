@@ -1,2 +1,2 @@
 # BROWSE-MOVIES
-### https://github.com/MShazilKhan7/Browse-Movies
+### https://mshazilkhan7.github.io/Browse-Movies/
